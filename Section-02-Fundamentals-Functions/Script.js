@@ -71,9 +71,20 @@ console.log(backgroundColor.value);
 
 //we cannot Return an Object literal from an Arrow Functions while  function expressions can do.
 let setColor1 = (color) => {
-  {
-    value: color;
-  }
+  value: color;
 };
-let color = setColor1("green 🟢");
-console.log(color.value);
+let color = setColor1("yellow 🟡");
+console.log(color); //this will gives an undefined.
+
+//Since both block and object literal use curly brackets, the JavasScript engine cannot distinguish between a block and an object.
+
+//To fix this, you need to wrap the object literal in parentheses
+let setColor2 = (color) => ({
+  value: color,
+});
+let color1 = setColor2("green 🟢");
+console.log(color1.value);
+
+//Limitations of Arrow Functions
+//Arrow functions doesnot have their own this, constructor and super and doesn't called as method
+//Arrow functions cannot be used as constructors. Calling them with new throws a TypeError.
