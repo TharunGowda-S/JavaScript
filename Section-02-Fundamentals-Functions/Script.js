@@ -45,7 +45,35 @@ const CalcAge = function (birthyear) {
 const age1 = CalcAge(1999);
 
 //Arrow Function
+
+//Arrow Functions are introduced in ES6. it provide a shorter way to write the function as compared to function Expression.
+//Return will implicitly called, if the function as a single statement and  without block{}
+//if you use the block syntax, you need to explicitly use the return keyword.
+//The arrow function is also an instance of the Function type.
+
 const calcAge1 = (birthyear) => 2024 - birthyear;
 const age2 = calcAge1(2000);
 
 console.log(age1, age2);
+
+let add = (x, y) => {
+  return x + y;
+};
+console.log(add(5, 2));
+
+//function Expressions Return an Object Literals
+let setColor = function (color) {
+  return { value: color };
+};
+
+let backgroundColor = setColor("Red 🔴");
+console.log(backgroundColor.value);
+
+//we cannot Return an Object literal from an Arrow Functions while  function expressions can do.
+let setColor1 = (color) => {
+  {
+    value: color;
+  }
+};
+let color = setColor1("green 🟢");
+console.log(color.value);
