@@ -88,3 +88,20 @@ console.log(color1.value);
 //Limitations of Arrow Functions
 //Arrow functions doesnot have their own this, constructor and super and doesn't called as method
 //Arrow functions cannot be used as constructors. Calling them with new throws a TypeError.
+
+//Functions calling another functions
+
+const fruitPieces = function (fruit) {
+  return fruit * 4;
+};
+
+const FruitProcessors = function (apple, mango) {
+  const applePieces = fruitPieces(apple); // Here fruitPiecess functions are called and store the returned value into variable.
+  const MangoPieces = fruitPieces(mango); // here Inside the FruitProcessor function another function fruitPieces are called.
+
+  const juice = ` Juice with ${applePieces} pieces of apple and ${MangoPieces} of mangoes`;
+  return juice;
+};
+
+const juice = FruitProcessors(2, 3);
+console.log(juice);
