@@ -105,3 +105,22 @@ const FruitProcessors = function (apple, mango) {
 
 const juice = FruitProcessors(2, 3);
 console.log(juice);
+
+//Reviewing functions
+const calcAge = function (birthyear) {
+  return 2022 - birthyear;
+};
+const yearsUntilRetirement = function (birthyear, firstname) {
+  const age = calcAge(birthyear);
+  const retirement = 65 - age;
+  if (retirement > 0) {
+    console.log(`${firstname} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstname} has already retired 🎉`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetirement(1999, "Tharun"));
+console.log(yearsUntilRetirement(1997, "Varun"));
