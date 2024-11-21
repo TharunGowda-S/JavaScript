@@ -124,3 +124,53 @@ const yearsUntilRetirement = function (birthyear, firstname) {
 
 console.log(yearsUntilRetirement(1999, "Tharun"));
 console.log(yearsUntilRetirement(1997, "Varun"));
+
+//before Knowing Arrays
+const friend1 = "Ajay";
+const friend2 = "vikas";
+const friend3 = "gowda";
+
+//when we want to store 10 friend names the above sytax is more complicated
+// here Array commes into the picture.
+/* Array is an ordered list of values. Each Value is called as an element specified by an index.
+   Array is also A type of data Structure.
+   An element in array can be any type (it could be Number,String, Boolean, Object and null)
+   behind the Sence An Array can be the Constructur fuction , Array Literals is the instance of that Constructor Function.*/
+
+//The size of an array is dynamic and auto-growing. In other words, you don’t need to specify the array size up front.
+
+const friendNames = ["Ajay", "vikas", "Gowda", "Vijay"];
+console.log(friendNames);
+
+//How to access the single (particular) Element from the Array.
+//Array index starts from the "0".
+console.log(friendNames[0]);
+console.log(friendNames[2]);
+
+//to know how many Elements are there in the Unknown Array
+//Array Can have a special property called "length", it returns the elements count of an Array.
+console.log(friendNames.length);
+
+// Arrays are Hetregeneus means it can store any type of elements
+const array1 = [
+  " ram ",
+  22,
+  true,
+  null,
+  { pincode: 572106, addresss: "mysore" },
+  "Developer",
+];
+
+console.log(typeof array1); //array1 is an instance of the Array Constructor Function
+console.log(typeof Array); //returns Function
+console.log(Array);
+
+//how to define or Declare an Array
+//in two types can declare or define the array
+const arr = new Array(); // creating an empty array object
+console.log(typeof arr, arr);
+
+//another type
+const arr1 = [1, 2, 3, 4, 5];
+
+console.log(typeof arr1, arr1); //literal type
