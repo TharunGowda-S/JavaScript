@@ -174,3 +174,7 @@ console.log(typeof arr, arr);
 const arr1 = [1, 2, 3, 4, 5];
 
 console.log(typeof arr1, arr1); //literal type
+
+//Array are mutable means we can change the Array.
+arr1[3] = "vinay";
+console.log(arr1);
