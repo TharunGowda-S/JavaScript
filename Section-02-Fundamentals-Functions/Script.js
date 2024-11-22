@@ -203,3 +203,11 @@ console.log(artists);
 
 //Many other Array methods are there more about that in the feature sections.
 //[reduce, map ,filter, slice , splice, etc..]
+
+//In JavaScript, an object is an unordered collection of key-value pairs. Each key-value pair is called a property.
+//The key of a property can be a string. The value of a property can be any value, e.g., a string, a number, an array, and even a function.
+
+//JavaScript provides you with many ways to create an object. The most commonly used one is to use the object literal notation.
+//The following example creates an empty object using the object literal notation:
+
+let empty = {};
