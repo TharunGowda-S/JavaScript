@@ -178,3 +178,28 @@ console.log(typeof arr1, arr1); //literal type
 //Array are mutable means we can change the Array.
 arr1[3] = "vinay";
 console.log(arr1);
+
+//JavaScript allows you to omit the new operator when using the Array() constructor.
+let artists = Array();
+
+//Some basic methods of the Array are
+//1. Push() this methods inserts an new element at the end of the Array
+artists.push(10);
+console.log(artists);
+artists.push("vikas");
+console.log(artists);
+
+//2.unshift() this method is also inserts a new Element at the beginning of the Array
+artists.unshift(20);
+console.log(artists);
+
+//3. pop() this Method is delete the Array elements at the end
+artists.pop();
+console.log(artists);
+
+//4. shift() this Method is delete the Array elements at the beginning
+artists.shift();
+console.log(artists);
+
+//Many other Array methods are there more about that in the feature sections.
+//[reduce, map ,filter, slice , splice, etc..]
