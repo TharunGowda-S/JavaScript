@@ -204,6 +204,8 @@ console.log(artists);
 //Many other Array methods are there more about that in the feature sections.
 //[reduce, map ,filter, slice , splice, etc..]
 
+//Objects
+
 //In JavaScript, an object is an unordered collection of key-value pairs. Each key-value pair is called a property.
 //The key of a property can be a string. The value of a property can be any value, e.g., a string, a number, an array, and even a function.
 
@@ -211,3 +213,21 @@ console.log(artists);
 //The following example creates an empty object using the object literal notation:
 
 let empty = {};
+
+let employee = {
+  firstName: "vikas",
+  salary: 200000,
+  age: 20,
+};
+
+//Asscessing the properties of the Object
+// the dot (.) notation
+//Syntax:objectName.propertyName
+//ex:
+console.log(employee.firstName);
+
+// the Bracket[] notation
+//Syntax:objectName['propertyName']
+//When a property name contains spaces, you need to place it inside quotes.
+//ex:
+console.log(employee["salary"]);
