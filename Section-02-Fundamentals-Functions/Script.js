@@ -231,3 +231,19 @@ console.log(employee.firstName);
 //When a property name contains spaces, you need to place it inside quotes.
 //ex:
 console.log(employee["salary"]);
+
+//How can we check if the property exists in an object or not ?
+//To check if a property exists in an object, you use the " in " operator.
+//Syntax: propertyName in objectName
+
+//ex:
+console.log("firstName" in employee);
+//console.log(firstName in employee); // throws an error because PropertyName( key ) is a string in object.
+console.log("ssn" in employee);
+
+//how to delete a property from an object.
+//syntax: delete objectName.propertyName.
+//ex:
+console.log(employee.age);
+delete employee.age;
+console.log(employee.age);
