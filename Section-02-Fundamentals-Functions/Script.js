@@ -247,3 +247,20 @@ console.log("ssn" in employee);
 console.log(employee.age);
 delete employee.age;
 console.log(employee.age);
+
+// Object Methods
+// we can pass the functions as a value in the object and the function defined inside an object is called Method.
+let person = {
+  FirstName: "vijay",
+
+  LastName: "sreeman",
+  friends: ["Eshwar", "Mahesh", "vikas"],
+  salary: 30000,
+  calcage: function (birthyear) {
+    return 2024 - birthyear;
+  },
+  // we cannot use the function decleration inside the object.
+};
+
+//to access the method in the object
+console.log(person.calcage(1999));
