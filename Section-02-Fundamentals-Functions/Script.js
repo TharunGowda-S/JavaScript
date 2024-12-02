@@ -257,6 +257,8 @@ let person = {
   friends: ["Eshwar", "Mahesh", "vikas"],
   salary: 30000,
   calcage: function (birthyear) {
+    //this keyword is points the object that is belongs to
+    console.log(this);
     return 2024 - birthyear;
   },
   // we cannot use the function decleration inside the object.
