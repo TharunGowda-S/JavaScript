@@ -258,11 +258,13 @@ let person = {
   salary: 30000,
   calcage: function (birthyear) {
     //this keyword is points the object that is belongs to
-    console.log(this);
-    return 2024 - birthyear;
+    //console.log(this);
+    this.age = 2024 - birthyear;
+    return this.age;
   },
   // we cannot use the function decleration inside the object.
 };
 
 //to access the method in the object
 console.log(person.calcage(1999));
+console.log(person.age);
