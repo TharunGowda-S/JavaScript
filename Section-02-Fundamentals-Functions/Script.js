@@ -304,3 +304,15 @@ console.log("============================");
 for (let j = 0; j < personDetails.length; j++) {
   console.log(personDetails[j]);
 }
+
+//continue and braek
+console.log("======only String======");
+for (let i = 0; i < personDetails.length; i++) {
+  if (typeof personDetails[i] !== "string") continue;
+  console.log(personDetails[i], typeof personDetails[i]);
+}
+console.log("=====Break with Numbers========");
+for (let i = 0; i < personDetails.length; i++) {
+  if (typeof personDetails[i] === "number") break;
+  console.log(personDetails[i], typeof personDetails[i]);
+}
