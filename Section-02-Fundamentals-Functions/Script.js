@@ -268,3 +268,19 @@ let person = {
 //to access the method in the object
 console.log(person.calcage(1999));
 console.log(person.age);
+
+//For-loop
+//printing a same message in multiple times
+console.log(" hii ");
+console.log(" hii ");
+console.log(" hii ");
+// the above code shows the static behaviour each time we are printing the same message
+// how to achive this in dynamic way.
+// here looping comes in to picture.
+for (let i = 1; i < 3; i++) {
+  console.log(" hii " + i);
+}
+// in this above code we wrote the log message at one place but it executes 3 times as your wish.
+// in for loop it initializes a variable called i and assigned a value 1 and we also mention the condition i<3;
+// weather the condition is true control enters into the loop and executes the statements inside a loop and move to increment part in for loop and executes the
+// loop until und unless the condition becomes false, then it exits the loop.
