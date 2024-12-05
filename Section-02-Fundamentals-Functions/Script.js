@@ -284,3 +284,23 @@ for (let i = 1; i < 3; i++) {
 // in for loop it initializes a variable called i and assigned a value 1 and we also mention the condition i<3;
 // weather the condition is true control enters into the loop and executes the statements inside a loop and move to increment part in for loop and executes the
 // loop until und unless the condition becomes false, then it exits the loop.
+
+//iterating (looping) Arrays.
+const personDetails = [
+  "ShriMan",
+  "Sri",
+  20,
+  ["vishnu", "pradyumna", "Sankarshana"],
+  300000,
+  "Software Engineering",
+];
+
+for (let i = 0; i < 5; i++) {
+  console.log(personDetails[i]);
+}
+console.log("============================");
+//in the above code we are hard coded the condition in the for loop
+// to make this as a dynamic we have to use a special property of Array called Array.length (personDetails.length in this case)
+for (let j = 0; j < personDetails.length; j++) {
+  console.log(personDetails[j]);
+}
