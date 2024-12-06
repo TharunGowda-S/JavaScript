@@ -316,3 +316,11 @@ for (let i = 0; i < personDetails.length; i++) {
   if (typeof personDetails[i] === "number") break;
   console.log(personDetails[i], typeof personDetails[i]);
 }
+
+//While loop
+//The JavaScript while statement creates a loop that executes a block as long as a condition evaluates to true.
+let count = 1;
+while (count < 10) {
+  console.log(count);
+  count += 2;
+}
