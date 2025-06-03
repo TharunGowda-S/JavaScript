@@ -306,12 +306,14 @@ for (let j = 0; j < personDetails.length; j++) {
 }
 
 //continue and braek
+//continue statement jumps over  one iteration in the loop.
 console.log("======only String======");
 for (let i = 0; i < personDetails.length; i++) {
   if (typeof personDetails[i] !== "string") continue;
   console.log(personDetails[i], typeof personDetails[i]);
 }
 console.log("=====Break with Numbers========");
+// The Break statement jumps out from the loop.
 for (let i = 0; i < personDetails.length; i++) {
   if (typeof personDetails[i] === "number") break;
   console.log(personDetails[i], typeof personDetails[i]);
