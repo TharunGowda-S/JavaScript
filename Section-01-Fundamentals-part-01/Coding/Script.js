@@ -104,7 +104,7 @@ console.log(sentence);
 //Javascript strings are immutable
 //3. Boolean => boolean type has two literal values such as "true" and "false"
 //example:
-//let inProgress = true;
+let inProgress = true;
 let completed = false;
 
 console.log(typeof completed);
