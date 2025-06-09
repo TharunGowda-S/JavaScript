@@ -326,3 +326,5 @@ while (count < 10) {
   console.log(count);
   count += 2;
 }
+
+concole.log(" After this modren opeators and Strings ")
